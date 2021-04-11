@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-01</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #ff8882;
+            padding: 0;
+            /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #194350;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            padding-left: 50px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #194350;
+            padding: 0 16px;
+
+        }
+
+        nav .navbar {
+            width: 30%;
+        }
+
+        main {
+            width: 70%;
+            margin: 0 auto;
+            height: 65vh;
+        }
+
+        footer {
+            background-color: #9dbeb9;
+            color: #194350;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px 5px;
+        }
+
+        main h1 {
+            background-color: #ffc2b4;
+            color: #194350;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 1rem;
+            padding: 20px 0;
+            margin-top: 100px;
+            font-size: 2.4rem;
+        }
+
+        main p {
+            border-radius: 2rem;
+            text-align: center;
+            padding: 8px 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>class-01</h1>
+            <div class="navbar">
+                <a href="#">page 1</a>
+                <a href="#">page 2</a>
+                <a href="#">page 3</a>
+                <a href="#">page 4</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Class 1 Lab</h1>
+        <p style="background-color: #194350;color: #ffc2b4;">what is your name ??</p>
+        <p style="background-color: #ffc2b4; color: #194350;">how old are you?</p>
+        <p style="background-color: #194350;color: #ffc2b4;">what is your favorite color ?</p>
+        <p style="background-color: #ffc2b4; color: #194350;">Did you know me?</p>
+    </main>
+    <footer>
+        &copy;Rawan Alakhras
+    </footer>
+    <script>
+
+        let userName = prompt("what is your name ??");
+        alert("welcome " + userName + ", it is a nice name ❤");
+        console.log("welcome " + userName + ", it is a nice name ❤");
+        let userAge = prompt("how old are you?");
+        let myAge = 22;
+        function calculateAge(age) {
+            if (age > myAge) {
+                let difference = age - myAge;
+                alert("You are " + difference + "years older than me !");
+                console.log("You are " + difference + "years older than me !");
+            }
+            else if (age < myAge) {
+                let difference = myAge - age;
+                alert("You are " + difference + "years younger than me !");
+                console.log("You are " + difference + "years younger than me !");
+            } else {
+                alert("Nice we have same age ❤");
+                console.log("Nice we have same age ❤");
+            }
+        }
+        calculateAge(userAge);
+        let userColor = prompt("what is your favorite color ?");
+        alert(userColor + " is a Very beautiful color my favorite color is black");
+        console.log(userColor + " is a Very beautiful color, my favorite color is black");
+        let knowMe = prompt("Did you know me?");
+        knowMe = knowMe.toLowerCase();
+        function ifknow(knowMe) {
+            if (knowMe == "yes") {
+                alert("I'm glad you are here❤ ");
+                console.log("I'm glad you are here❤ ");
+            }
+            else if (knowMe == "no") {
+                alert("I love getting to know new friends");
+                console("I love getting to know new friends");
+            }
+            else {
+                alert("Have a good day");
+                console.log("Have a good day");
+            }
+        }
+        ifknow(knowMe);
+
+    </script>
+</body>
+
+</html>
